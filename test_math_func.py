@@ -9,7 +9,7 @@ def test_add():
     assert math_func.add(5) == 7
 
 
-@pytest.mark.number
+@pytest.mark.skip(reason="do not run number")
 def test_product():
     assert math_func.product(7, 2) == 14
     assert math_func.product(5) == 10
